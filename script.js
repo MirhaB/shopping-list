@@ -1,7 +1,7 @@
 const itemForm = document.getElementById('item-form');
 const itemInput = document.getElementById('item-input');
 const itemList = document.getElementById('item-list');
-
+ 
 
 itemForm.addEventListener('submit', addItem);
 
@@ -15,6 +15,7 @@ function addItem(e) {
 
  li.appendChild(document.createTextNode(itemInput.value));
 const button = createButton('remove-item btn-link text-red');
+
 li.appendChild(button);
 itemList.appendChild(li); 
 }
